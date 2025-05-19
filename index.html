@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body> 
+    <h1 class="text-center">welcome to calculate me</h1>
+    <main>
+        <div class="box">
+            <div class="first-section">
+                <input type="text" style=" margin: 30px 0px 0px 73px ;
+                      height: 70px;
+                   /* border: none; */
+                     /* font-size: 1rem;  */
+                     font-size: 20px; border: none; outline: none;" id="res">
+
+
+
+            </div>
+            <div class="second-section">
+                <div class="first-container">
+                    <button >mc</button>
+                    <button>m+</button>
+                    <button>m-</button>
+                    <button>mr</button>
+                </div>
+
+
+                <div class="second-container">
+                    <button onclick="clearAll()">AC</button>
+                    <button onclick="lastdelete()"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button>+/-</button>
+                    <button>l</button>
+                </div>
+
+                <div class="second-container">
+                    <button value="7" onclick="calc(this.value)">7</button>
+                    <button value="8" onclick="calc(this.value)">8</button>
+                    <button value="9" onclick="calc(this.value)">9</button>
+                    <button value="*" onclick="calc(this.value)"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="second-container">
+                    <button value="4" onclick="calc(this.value)">4</button>
+                    <button value="5" onclick="calc(this.value)">5</button>
+                    <button value="6" onclick="calc(this.value)">6</button>
+                    <button value="-" onclick="calc(this.value)"><i class="fa-solid fa-minus"></i></button>
+                </div>
+
+                <div class="second-container">
+                    <button value="1" onclick="calc(this.value)">1</button>
+                    <button value="2" onclick="calc(this.value)">2</button>
+                    <button value="3" onclick="calc(this.value)">3</button>
+                    <button value="+" onclick="calc(this.value)">+</button>
+                </div>
+
+                <div class="second-container ">
+                    <button value="%" onclick="calc(this.value)">%</button>
+                    <button value="0" onclick="calc(this.value)">0</button>
+                    <button value="." onclick="calc(this.value)">.</button>
+                    <button type="button" onclick="output()">=</button>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    <script src="calc.js"></script>
+</body>
+
+</html>
